@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  list-style-type: none;
+  text-decoration: none;
+  color: aliceblue;
+}
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+  width: 100hw;
+  max-width: 100%;
+  height: 100%;
+
+  background-color: #111927;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(
+      at 47% 33%,
+      hsl(162, 77%, 40%) 0,
+      transparent 59%
+    ),
+    radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 55%);
+}
+
+body h4:first-of-type {
+  text-align: center;
+}
+
+#programmes {
+  margin: auto;
+  border-collapse: collapse;
+  width: 95%;
+}
+#programmes td,
+#programmes th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#programmes tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#programmes tr:nth-child(even) td {
+  color: #111927;
+}
+#programmes tr:hover {
+  background-color: #ddd;
+}
+#programmes th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #007449;
+  color: white;
+}
+
+.floatbot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007449;
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+.floatbot:hover {
+  background-color: #ffffff;
+  transition: 0.4s;
+}
+#go-top:hover {
+  color: #007449;
+  transition: 0.4s;
+}

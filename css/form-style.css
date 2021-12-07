@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  list-style-type: none;
+  text-decoration: none;
+}
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap");
+body {
+  background: url("../images/Background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+}
+@media (orientation: portrait) {
+  body {
+    background: url("../images/SmallScreenbg.jpg");
+    background-size: cover;
+  }
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 4vh;
+  color: rgb(227, 242, 255);
+  font-size: 1.5vw;
+  margin-bottom: 3vh;
+}
+@media screen and (max-width: 1200px) {
+  .container1 {
+    font-size: 3vw;
+  }
+}
+.form-div {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin: 0 auto;
+
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.64);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+@media screen and (max-width: 1200px) {
+  .form-div {
+    width: 90%;
+    padding: 20px;
+  }
+}
+.form-div p {
+  margin-top: 4px;
+}
+@media screen and (max-width: 1200px) {
+  .form-div p {
+    font-size: 3.2vw;
+  }
+}
+.form-div input {
+  margin-top: 4px;
+  width: 400px;
+  height: 5vh;
+  padding-left: 10px;
+  border-radius: 15px;
+  border: 1px solid aliceblue;
+  background: transparent;
+  color: aliceblue;
+}
+.form-div input[type="submit"] {
+  margin-bottom: 2vh;
+  cursor: pointer;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.48);
+  border-radius: 12px;
+  border: none;
+  transition: 0.4s;
+}
+@media screen and (max-width: 1200px) {
+  .form-div input[type="submit"],
+  .form-div p:last-child a {
+    font-size: 3vw;
+  }
+}
+.form-div input[type="submit"]:hover {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: none;
+  color: black;
+}
+input:focus {
+  border: 1px solid aliceblue;
+}
+.form-div p:last-child {
+  font-size: 13px;
+  text-align: center;
+  margin-top: -1vh;
+  margin-bottom: 1vh;
+}
+.form-div p:last-child a {
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  transition: 0.4s;
+}
+.form-div p:last-child a:hover {
+  color: black;
+  text-shadow: white 0.1em 0.1em 0.2em;
+}
